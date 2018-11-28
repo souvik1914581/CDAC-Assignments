@@ -1,0 +1,1 @@
+cmd_/home/pi/Codes/Device_Drivers/Day2/Char_devices/Q4/chardev1.ko := ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/pi/Codes/Device_Drivers/Day2/Char_devices/Q4/chardev1.ko /home/pi/Codes/Device_Drivers/Day2/Char_devices/Q4/chardev1.o /home/pi/Codes/Device_Drivers/Day2/Char_devices/Q4/chardev1.mod.o ;  true
