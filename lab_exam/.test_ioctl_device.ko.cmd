@@ -1,0 +1,1 @@
+cmd_/home/pi/Codes/Device_Drivers/lab_exam/test_ioctl_device.ko := ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/pi/Codes/Device_Drivers/lab_exam/test_ioctl_device.ko /home/pi/Codes/Device_Drivers/lab_exam/test_ioctl_device.o /home/pi/Codes/Device_Drivers/lab_exam/test_ioctl_device.mod.o ;  true
