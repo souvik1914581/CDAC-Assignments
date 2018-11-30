@@ -14,7 +14,7 @@
 #define DEVCOUNT 1
 
 static dev_t devno;
- 
+int flag = 1; 
 
 static 	struct cdev _cdev;
 struct ioctl_struct
@@ -32,8 +32,13 @@ MODULE_AUTHOR("DESD");
 
 int open_func(struct inode *inodp,struct file *filep)
 {
-	printk("Inside open func\n");
 	
+	printk("Inside open func\n");
+	if(flag == 0)
+	{
+		return -1;
+	}
+	flag = 0;	
 	return 0;
 	
 }
@@ -41,7 +46,7 @@ int open_func(struct inode *inodp,struct file *filep)
 
 int close_func(struct inode *inodp,struct file *filep)
 {
-//	kfree(cbuf.buf);
+	flag = 1;
 	printk("Inside close\n");
 	return 0;
 }
