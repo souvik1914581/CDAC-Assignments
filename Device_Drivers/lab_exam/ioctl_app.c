@@ -54,6 +54,7 @@ int main(int argc,char *argv[])
 				printf("Received structure members are :\nid = %d\nname = %s\ndata = %ld\n",my_struct1->id,my_struct1->name,my_struct1->data);
 				break;
 			case 3:
+				close(fd);
 				exit(0);
 				
 			
